@@ -45,18 +45,18 @@ extern "C"
                               amrex_real* state, AMREX_ARLIM_P(slo), AMREX_ARLIM_P(shi),
                               const int* nvar,
                               AMREX_D_DECL(const int* lrx,const int* lry,const int* lrz),
-                              const int* bc); 
+                              const int* bc);
 
     void amrex_quartinterp (amrex_real* fine, AMREX_ARLIM_P(flo), AMREX_ARLIM_P(fhi),
-			   const int* fblo, const int* fbhi, 
-			   const int* fb2lo, const int* fb2hi,
-			   const amrex_real* crse, AMREX_ARLIM_P(clo), AMREX_ARLIM_P(chi),
-			   const int* cblo, const int* cbhi, 
-			   const int* cb2lo, const int* cb2hi,
-			   const int* nvar, 
-			   AMREX_D_DECL(const int* lrx,const int* lry,const int* lrz),
-			   AMREX_D_DECL(amrex_real* ftmp, amrex_real* ctmp, amrex_real* ctmp2),
-			   const int* bc, const int* actual_comp, const int* actual_state);
+                           const int* fblo, const int* fbhi,
+                           const int* fb2lo, const int* fb2hi,
+                           const amrex_real* crse, AMREX_ARLIM_P(clo), AMREX_ARLIM_P(chi),
+                           const int* cblo, const int* cbhi,
+                           const int* cb2lo, const int* cb2hi,
+                           const int* nvar,
+                           AMREX_D_DECL(const int* lrx,const int* lry,const int* lrz),
+                           AMREX_D_DECL(amrex_real* ftmp, amrex_real* ctmp, amrex_real* ctmp2),
+                           const int* bc, const int* actual_comp, const int* actual_state);
 #ifdef __cplusplus
   }
 #endif
